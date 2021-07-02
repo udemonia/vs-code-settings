@@ -1,0 +1,107 @@
+{
+    "workbench.colorTheme": "Night Owl",
+    "workbench.iconTheme": "material-icon-theme",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.lineHeight": 0,
+    "editor.fontSize": 11,
+    // "editor.fontFamily": "'Fira Code iScript', Menlo, Monaco, 'Courier New', monospace",
+    // "editor.fontLigatures": true,
+    // "editor.tokenColorCustomizations": {
+    //     "textMateRules": [{
+    //         "name": "variable",
+    //         "scope": [
+    //             "variable"
+    //         ]
+    //     }]
+    // },
+    "editor.fontFamily": "Operator Mono, Fira Code iScript, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": [
+            //following will be in italic
+            "comment",
+            "entity.name.type.class", //class names
+            "constant", //String, Number, Boolean…, this, super
+            "storage.modifier", //static keyword
+            "storage.type.class.js", //class keyword
+            "keyword", //import, export, return…
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            //following will be excluded from italics (VSCode has some defaults for italics)
+            "invalid",
+            "keyword.operator",
+            "constant.numeric.css",
+            "keyword.other.unit.px.css",
+            "constant.numeric.decimal.js",
+            "constant.numeric.json"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    },
+    "window.zoomLevel": 2,
+    "quokka.colorizeOutput": false,
+    "explorer.confirmDelete": false,
+    "cSpell.userWords": [
+        "BSON",
+        "Bootcamps",
+        "Braelynn",
+        "Creds",
+        "Geisinger",
+        "HYCH",
+        "Kalvin",
+        "Pipeing",
+        "Postgres",
+        "Promisfy",
+        "Promisification",
+        "Thycotic",
+        "Waunakee",
+        "bootcamp",
+        "brandonlambert",
+        "datatypes",
+        "feelslike",
+        "fileupload",
+        "fook",
+        "gspread",
+        "isin",
+        "jira",
+        "keyresults",
+        "minlength",
+        "mlab",
+        "mymod",
+        "newb",
+        "numpy",
+        "readdir",
+        "sbin",
+        "socketio",
+        "thenables",
+        "trin",
+        "udemy",
+        "virtuals",
+        "zipcode"
+    ],
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": "{{put-password-here}}"
+        }
+    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "terminal.integrated.tabs.enabled": true
+}
